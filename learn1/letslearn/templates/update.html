@@ -1,0 +1,20 @@
+<h1>Update home</h1>
+<form action = "update record/{{myhome.id}}" method = "post">
+    {% csrf_token %}
+    First Name:<br>
+    <input name = "first" value = "{{myhome.firstname}}">
+    <br><br>
+    Last Name:<br>
+    <input name = "last" value = "{{myhome.lastname}}">
+    <br><br>
+    Email_id:<br>
+    <input name = "email" value = "{{myhome.email_id}}">
+    <br><br>
+    Mobileno:<br>
+    <input name = "mobileno" value = "{{myhome.mobileno}}">
+    <br><br>
+    Age:<br>
+    <input name = "age" value = "{{myhome.age}}">
+    <br><br>
+    <input type = "submit" value = "Submit">
+</form>
